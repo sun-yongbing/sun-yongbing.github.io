@@ -33,7 +33,6 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: "true"
-          NEXT_PUBLIC_BASE_PATH: "/sunyongbing"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
