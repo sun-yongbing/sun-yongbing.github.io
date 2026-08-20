@@ -7,3 +7,6 @@ out/
 public/pet/companion-source.png
 public/pet/companion-crisp.png
 public/pet/companion-key.png
+
+.vercel
+.env*
