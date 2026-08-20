@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+*.log
+.env*
+!.env.example
+public/pet/companion-source.png
+public/pet/companion-crisp.png
+public/pet/companion-key.png
