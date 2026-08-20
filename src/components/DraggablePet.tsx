@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 type Position = { x: number; y: number };
 const fallback = { x: -24, y: -24 };
+const assetPrefix = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export function DraggablePet() {
   const [position, setPosition] = useState<Position>(fallback);
@@ -45,7 +46,7 @@ export function DraggablePet() {
       window.addEventListener("pointermove", move);
       window.addEventListener("pointerup", stop);
     }}>
-      <Image src="/pet/companion.png" alt="陪伴小宠物" width={220} height={330} priority />
+      <Image src={`${assetPrefix}/pet/companion.png`} alt="陪伴小宠物" width={220} height={330} priority />
     </button>
     <span>按住我可以拖动</span>
   </div>;
